@@ -14,7 +14,7 @@ function animarGrafico() {
 function simular(tipo) {
     const texto = document.getElementById('status-text');
     const dica = document.getElementById('tip-text');
-    texto.innerHTML = "> ACESSANDO BANCO DE DADOS DO RIO DAS CINZAS...";
+    texto.innerHTML = "> ANALISANDO BANCO DE DADOS DO RIO DAS CINZAS...";
     dica.innerHTML = ""; 
     setTimeout(() => {
         if (tipo === 'quimico') {
