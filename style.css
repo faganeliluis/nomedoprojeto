@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f7f2;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -19,9 +20,13 @@ main {
     margin: auto;
 }
 
-#sobre {
+#sobre, #simulador {
     text-align: center;
     margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 #pilares {
@@ -29,6 +34,7 @@ main {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -42,11 +48,50 @@ main {
 
 .card h3 {
     color: #2d5a27;
+    margin-top: 0;
+}
+
+/* Estilos do Simulador e Botões */
+.botoes-simulacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2d5a27;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e7d36;
+    transform: scale(1.05);
+}
+
+#resultado-simulacao {
+    text-align: center;
+    min-height: 80px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #e2e2e2;
+    background: #2d5a27;
+    color: white;
     margin-top: 40px;
 }
