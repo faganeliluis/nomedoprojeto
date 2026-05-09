@@ -1,29 +1,26 @@
-/**
- * Função para simular o impacto das práticas agrícolas
- * @param {string} tipo - O tipo de prática escolhida pelo usuário
- */
+// Função para animar os gráficos de monitoramento
+function animarGrafico() {
+    const dados = [{ id: 'barra-rio', valor: 92 }, { id: 'barra-cafe', valor: 88 }];
+    dados.forEach(item => {
+        const barra = document.getElementById(item.id);
+        let atual = 0;
+        barra.style.width = '0%';
+        const timer = setInterval(() => {
+            if (atual >= item.valor) { clearInterval(timer); }
+            else { atual++; barra.style.width = atual + '%'; barra.innerText = atual + '%'; }
+        }, 20); 
+    });
+}
+
+// Função para o simulador de futuro
 function simular(tipo) {
-    // Seleciona o elemento HTML onde o resultado será exibido
-    const resultadoDiv = document.getElementById('resultado-simulacao');
-    
-    let mensagem = "";
-    let corFundo = "";
-    let corTexto = "#333";
-
-    // Estrutura Condicional (Critério de Avaliação do Agrinho)
-    if (tipo === 'quimico') {
-        mensagem = "<strong>ALERTA DE IMPACTO:</strong> O uso excessivo de químicos pode aumentar a produção imediata, mas contamina o solo e as águas da sua região a longo prazo. ⚠️";
-        corFundo = "#f8d7da"; // Vermelho claro de alerta
-        corTexto = "#721c24";
-    } 
-    else if (tipo === 'sustentavel') {
-        mensagem = "<strong>IMPACTO POSITIVO:</strong> O uso de bioinsumos mantém o equilíbrio biológico, protege a saúde da sua família e garante uma terra fértil para as futuras gerações! 🌱✨";
-        corFundo = "#d4edda"; // Verde claro de sucesso
-        corTexto = "#155724";
-    }
-
-    // Atualiza o conteúdo e o estilo dinamicamente
-    resultadoDiv.innerHTML = `<p style="color: ${corTexto}">${mensagem}</p>`;
-    resultadoDiv.style.backgroundColor = corFundo;
-    resultadoDiv.style.borderColor = corTexto;
+    const texto = document.getElementById('status-text');
+    texto.innerHTML = "> ANALISANDO RIO DAS CINZAS...";
+    setTimeout(() => {
+        if (tipo === 'quimico') {
+            texto.innerHTML = "<span style='color: #ff4444'>> ERRO: Risco ambiental detectado em Tomazina. Solo degradado.</span>";
+        } else {
+            texto.innerHTML = "<span style='color: #00ff88'>> SUCESSO: Protocolo Agrinho validado. Café e Natureza em equilíbrio!</span>";
+        }
+    }, 1500);
 }
