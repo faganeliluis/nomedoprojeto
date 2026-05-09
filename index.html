@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroSustentável - Futuro da Agricultura Familiar</title>
+    <title>AgroSustentável - Concurso Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Agro Forte, Futuro Sustentável</h1>
-        <p>O equilíbrio entre produção e meio ambiente</p>
+        <p>O equilíbrio entre produção e meio ambiente na agricultura familiar</p>
     </header>
 
     <main>
         <section id="sobre">
             <h2>Agricultura Familiar: O Coração do Brasil</h2>
-            <p>A agricultura familiar é responsável pela maior parte dos alimentos que chegam à mesa dos brasileiros. Nosso projeto mostra como produzir com eficiência preservando nossos recursos naturais.</p>
+            <p>A agricultura familiar produz a maior parte dos alimentos que consumimos. O desafio é unir essa tradição com tecnologias que preservem a natureza.</p>
         </section>
 
         <section id="pilares">
@@ -32,10 +32,26 @@
                 <p>Técnicas que mantêm a terra fértil por gerações.</p>
             </div>
         </section>
+
+        <section id="simulador">
+            <h2>Simulador de Práticas Sustentáveis</h2>
+            <p>Escolha uma prática para ver o impacto na sua produção e no planeta:</p>
+            
+            <div class="botoes-simulacao">
+                <button onclick="simular('quimico')">Uso de Agrotóxicos</button>
+                <button onclick="simular('sustentavel')">Uso de Bioinsumos</button>
+            </div>
+
+            <div id="resultado-simulacao">
+                <p>Clique em um botão acima para ver a simulação.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 | Subcategoria 3</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
