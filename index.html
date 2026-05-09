@@ -20,16 +20,19 @@
     <section id="sobre-projeto" class="glass-panel">
         <h2 class="section-title">Sobre o Projeto</h2>
         <p class="texto-justificativa">
-            Este site foi desenvolvido para o <strong>Concurso Agrinho 2026</strong>. O objetivo é demonstrar como a 
-            tecnologia caminha lado a lado com a agricultura familiar de Tomazina, protegendo o Rio das Cinzas e 
-            fortalecendo a produção de Cafés Especiais para um futuro sustentável.
+            Este site foi desenvolvido para o <strong>Concurso Agrinho 2026</strong> com o objetivo de demonstrar como a 
+            tecnologia de ponta pode caminhar lado a lado com a agricultura familiar de Tomazina. 
+            Focamos no equilíbrio: usar a inovação para proteger riquezas como o Rio das Cinzas e fortalecer a produção de 
+            Cafés Especiais, garantindo um futuro sustentável para as próximas gerações.
         </p>
     </section>
 
     <div class="text-block-accessible">
         <p>
-            Abaixo, a imagem gerada por inteligência artificial representa nossa visão de futuro: a tecnologia monitorando 
-            nossa produção de café com a força do Salto Cavalcanti ao fundo. É a união entre inovação e herança natural.
+            Para que possamos colher os melhores frutos da nossa terra, é preciso olhar para o campo com olhos tecnológicos. 
+            A imagem abaixo representa a união do nosso café especial com o monitoramento digital. Observe como a força do 
+            Salto Cavalcanti e a riqueza do Rio das Cinzas são os pilares que sustentam cada grão produzido em Tomazina. 
+            Não é apenas agricultura; é o futuro sendo desenhado com respeito à nossa herança natural.
         </p>
     </div>
 
@@ -42,18 +45,22 @@
 
     <div class="text-block-accessible">
         <p>
-            Mas o futuro se constrói respeitando a realidade. A fotografia abaixo revela o majestoso Rio das Cinzas em 
-            Tomazina. Preservar este leito é garantir a vida da nossa bacia hidrográfica e a qualidade do café que exportamos.
+            Para compreendermos o futuro, precisamos respeitar o presente e o passado. Enquanto a imagem anterior nos mostra 
+            uma visão tecnológica, a fotografia abaixo revela a realidade majestosa do Rio das Cinzas em nossa Tomazina. 
+            Este rio não é apenas um cenário; é a artéria principal que irriga nossos cafezais e sustenta a biodiversidade. 
+            Preservar as suas águas é garantir que a nossa história continue fluindo com força e pureza.
         </p>
     </div>
 
     <section class="image-showcase">
         <div class="image-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Rio_das_Cinzas_em_Tomazina.jpg/1024px-Rio_das_Cinzas_em_Tomazina.jpg" alt="Foto Real do Rio das Cinzas">
-            <div class="image-caption">Registro Real: O coração das águas de Tomazina</div>
+            <img src="rio-tomazina.jpg" alt="Fotografia real do Rio das Cinzas em Tomazina">
+            <div class="image-caption">Registro histórico do Rio das Cinzas em Tomazina</div>
         </div>
     </section>
-    <p class="image-source">Fonte: Acervo Wikipedia / Autor: Rodrigo.S.Passos</p>
+    <p class="image-source">
+        Fonte da imagem: <a href="https://pt.wikipedia.org/wiki/Ficheiro:Rio_das_Cinzas_em_Tomazina.jpg" target="_blank">Acervo Wikipedia / Autor: Rodrigo.S.Passos</a>.
+    </p>
 
     <main>
         <section id="cards-container">
@@ -63,40 +70,59 @@
                 <p>Indicação Geográfica do Norte Pioneiro.</p>
                 <a href="https://www.cafesespeciaisdonortepioneiro.com.br/" target="_blank" class="btn-link">Conhecer a IG</a>
             </div>
+
             <div class="glass-card">
                 <div class="icon">🌊</div>
                 <h3>Rio das Cinzas</h3>
-                <p>Ações ambientais em Tomazina/PR.</p>
-                <a href="https://www.tomazina.pr.gov.br/meio-ambiente" target="_blank" class="btn-link">Prefeitura</a>
+                <p>Ações ambientais e serviços locais.</p>
+                <a href="https://www.tomazina.pr.gov.br/meio-ambiente" target="_blank" class="btn-link">Site da Prefeitura</a>
             </div>
+
             <div class="glass-card">
                 <div class="icon">🚜</div>
                 <h3>Agro Familiar</h3>
                 <p>O Brasil que alimenta o futuro.</p>
                 <div class="link-group">
-                    <a href="https://www.embrapa.br/tema-agricultura-familiar" target="_blank" class="btn-link-sm">Embrapa</a>
+                    <a href="https://www.embrapa.br/tema-agricultura-familiar" target="_blank" class="btn-link-sm">Site Embrapa</a>
                 </div>
             </div>
         </section>
 
         <div class="text-block-accessible">
-            <p>Monitore abaixo a simulação dos nossos índices de sustentabilidade regional.</p>
+            <p>
+                A transparência é fundamental para uma gestão responsável. No painel a seguir, acompanhe a simulação do 
+                equilíbrio ambiental da nossa bacia. Estes dados refletem como a preservação das margens impacta diretamente 
+                na qualidade final do café. Clique no botão para sincronizar.
+            </p>
         </div>
 
         <section id="comparativo-dados" class="glass-panel">
             <h2 class="section-title">Painel de Monitoramento</h2>
-            <p class="fonte-dados">Fonte: Estimativas baseadas em relatórios da ACENPP e Prefeitura.</p>
+            <p class="fonte-dados">Fonte: Estimativas baseadas em relatórios da ACENPP.</p>
             <button class="btn-main" onclick="animarGrafico()">Sincronizar Dados</button>
             <div class="grafico-container">
-                <div class="data-row"><label>Preservação das Margens</label><div class="progress-bg"><div id="barra-rio" class="progress-fill neon-cyan">0%</div></div></div>
-                <div class="data-row"><label>Eficiência Sustentável</label><div class="progress-bg"><div id="barra-cafe" class="progress-fill neon-green">0%</div></div></div>
+                <div class="data-row">
+                    <label>Preservação (Rio das Cinzas)</label>
+                    <div class="progress-bg"><div id="barra-rio" class="progress-fill neon-cyan">0%</div></div>
+                </div>
+                <div class="data-row">
+                    <label>Eficiência Sustentável</label>
+                    <div class="progress-bg"><div id="barra-cafe" class="progress-fill neon-green">0%</div></div>
+                </div>
             </div>
         </section>
+
+        <div class="text-block-accessible">
+            <p>
+                As nossas escolhas de hoje determinam o legado que deixaremos. Use o simulador abaixo para entender a 
+                diferença entre os modelos de produção e como o "Modelo Agrinho" protege o solo de Tomazina.
+            </p>
+        </div>
 
         <section id="simulador-futurista" class="glass-panel">
             <h2 class="section-title">Simulador de Futuro</h2>
             <div class="terminal-actions">
-                <button class="btn-action red" onclick="simular('quimico')">Sistemas Antigos</button>
+                <button class="btn-action red" onclick="simular('quimico')">Sistemas Obsoletos</button>
                 <button class="btn-action green" onclick="simular('sustentavel')">Modelo Agrinho</button>
             </div>
             <div id="terminal-screen"><p id="status-text">> Aguardando seleção...</p></div>
@@ -104,8 +130,11 @@
     </main>
 
     <footer>
-        <p>Projeto Agrinho 2026 | Tomazina-PR</p>
-        <p class="credits">ÉTICA: Imagem de capa gerada por IA. Foto do rio via Wikipedia (CC). Fontes: Embrapa, ACENPP e Prefeitura de Tomazina.</p>
+        <p>Desenvolvido para o Concurso Agrinho 2026 | Tomazina-PR</p>
+        <p class="credits">
+            ÉTICA: Imagem tecnológica gerada por IA. Fotografia real via Wikipedia (CC). 
+            Fontes: Embrapa, ACENPP e Prefeitura de Tomazina.
+        </p>
     </footer>
 
     <script src="script.js"></script>
