@@ -3,53 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroSustentável - Concurso Agrinho 2026</title>
+    <title>Tomazina Sustentável - Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="grid-overlay"></div>
+    <div class="glow-sphere"></div>
+    
     <header>
-        <h1>Agro Forte, Futuro Sustentável</h1>
-        <p>O equilíbrio entre produção e meio ambiente na agricultura familiar</p>
+        <div class="badge">Norte Pioneiro: Tomazina/PR</div>
+        <h1>Equilíbrio Produtivo no Rio das Cinzas</h1>
+        <p class="subtitle">Onde o café especial encontra a preservação ambiental e a beleza do Salto Cavalcanti.</p>
     </header>
 
+    <section id="sobre-projeto" class="glass-panel">
+        <h2 class="section-title">Sobre o Projeto</h2>
+        <p class="texto-justificativa">
+            Este site foi desenvolvido para o <strong>Concurso Agrinho 2026</strong>. O objetivo é demonstrar como a 
+            tecnologia caminha lado a lado com a agricultura familiar de Tomazina, protegendo o Rio das Cinzas e 
+            fortalecendo a produção de Cafés Especiais para um futuro sustentável.
+        </p>
+    </section>
+
+    <div class="text-block-accessible">
+        <p>
+            Abaixo, a imagem gerada por inteligência artificial representa nossa visão de futuro: a tecnologia monitorando 
+            nossa produção de café com a força do Salto Cavalcanti ao fundo. É a união entre inovação e herança natural.
+        </p>
+    </div>
+
+    <section class="image-showcase">
+        <div class="image-container">
+            <img src="capa-sustentavel.png" alt="Visão tecnológica do Café e Salto Cavalcanti">
+            <div class="image-caption">IA: Produção e Preservação unidas em Tomazina</div>
+        </div>
+    </section>
+
+    <div class="text-block-accessible">
+        <p>
+            Mas o futuro se constrói respeitando a realidade. A fotografia abaixo revela o majestoso Rio das Cinzas em 
+            Tomazina. Preservar este leito é garantir a vida da nossa bacia hidrográfica e a qualidade do café que exportamos.
+        </p>
+    </div>
+
+    <section class="image-showcase">
+        <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Rio_das_Cinzas_em_Tomazina.jpg/1024px-Rio_das_Cinzas_em_Tomazina.jpg" alt="Foto Real do Rio das Cinzas">
+            <div class="image-caption">Registro Real: O coração das águas de Tomazina</div>
+        </div>
+    </section>
+    <p class="image-source">Fonte: Acervo Wikipedia / Autor: Rodrigo.S.Passos</p>
+
     <main>
-        <section id="sobre">
-            <h2>Agricultura Familiar: O Coração do Brasil</h2>
-            <p>A agricultura familiar produz a maior parte dos alimentos que consumimos. O desafio é unir essa tradição com tecnologias que preservem a natureza.</p>
+        <section id="cards-container">
+            <div class="glass-card">
+                <div class="icon">☕</div>
+                <h3>Cafés Especiais</h3>
+                <p>Indicação Geográfica do Norte Pioneiro.</p>
+                <a href="https://www.cafesespeciaisdonortepioneiro.com.br/" target="_blank" class="btn-link">Conhecer a IG</a>
+            </div>
+            <div class="glass-card">
+                <div class="icon">🌊</div>
+                <h3>Rio das Cinzas</h3>
+                <p>Ações ambientais em Tomazina/PR.</p>
+                <a href="https://www.tomazina.pr.gov.br/meio-ambiente" target="_blank" class="btn-link">Prefeitura</a>
+            </div>
+            <div class="glass-card">
+                <div class="icon">🚜</div>
+                <h3>Agro Familiar</h3>
+                <p>O Brasil que alimenta o futuro.</p>
+                <div class="link-group">
+                    <a href="https://www.embrapa.br/tema-agricultura-familiar" target="_blank" class="btn-link-sm">Embrapa</a>
+                </div>
+            </div>
         </section>
 
-        <section id="pilares">
-            <div class="card">
-                <h3>Produção Consciente</h3>
-                <p>Uso de tecnologias para monitoramento de solo e economia de água.</p>
-            </div>
-            <div class="card">
-                <h3>Bioinsumos</h3>
-                <p>Substituição de químicos por soluções naturais, protegendo a biodiversidade.</p>
-            </div>
-            <div class="card">
-                <h3>Rotação de Culturas</h3>
-                <p>Técnicas que mantêm a terra fértil por gerações.</p>
+        <div class="text-block-accessible">
+            <p>Monitore abaixo a simulação dos nossos índices de sustentabilidade regional.</p>
+        </div>
+
+        <section id="comparativo-dados" class="glass-panel">
+            <h2 class="section-title">Painel de Monitoramento</h2>
+            <p class="fonte-dados">Fonte: Estimativas baseadas em relatórios da ACENPP e Prefeitura.</p>
+            <button class="btn-main" onclick="animarGrafico()">Sincronizar Dados</button>
+            <div class="grafico-container">
+                <div class="data-row"><label>Preservação das Margens</label><div class="progress-bg"><div id="barra-rio" class="progress-fill neon-cyan">0%</div></div></div>
+                <div class="data-row"><label>Eficiência Sustentável</label><div class="progress-bg"><div id="barra-cafe" class="progress-fill neon-green">0%</div></div></div>
             </div>
         </section>
 
-        <section id="simulador">
-            <h2>Simulador de Práticas Sustentáveis</h2>
-            <p>Escolha uma prática para ver o impacto na sua produção e no planeta:</p>
-            
-            <div class="botoes-simulacao">
-                <button onclick="simular('quimico')">Uso de Agrotóxicos</button>
-                <button onclick="simular('sustentavel')">Uso de Bioinsumos</button>
+        <section id="simulador-futurista" class="glass-panel">
+            <h2 class="section-title">Simulador de Futuro</h2>
+            <div class="terminal-actions">
+                <button class="btn-action red" onclick="simular('quimico')">Sistemas Antigos</button>
+                <button class="btn-action green" onclick="simular('sustentavel')">Modelo Agrinho</button>
             </div>
-
-            <div id="resultado-simulacao">
-                <p>Clique em um botão acima para ver a simulação.</p>
-            </div>
+            <div id="terminal-screen"><p id="status-text">> Aguardando seleção...</p></div>
         </section>
     </main>
 
     <footer>
-        <p>Projeto desenvolvido para o Concurso Agrinho 2026 | Subcategoria 3</p>
+        <p>Projeto Agrinho 2026 | Tomazina-PR</p>
+        <p class="credits">ÉTICA: Imagem de capa gerada por IA. Foto do rio via Wikipedia (CC). Fontes: Embrapa, ACENPP e Prefeitura de Tomazina.</p>
     </footer>
 
     <script src="script.js"></script>
