@@ -1,4 +1,3 @@
-// Função para animar os gráficos de monitoramento
 function animarGrafico() {
     const dados = [{ id: 'barra-rio', valor: 92 }, { id: 'barra-cafe', valor: 88 }];
     dados.forEach(item => {
@@ -12,15 +11,14 @@ function animarGrafico() {
     });
 }
 
-// Função para o simulador de futuro
 function simular(tipo) {
     const texto = document.getElementById('status-text');
-    texto.innerHTML = "> ANALISANDO RIO DAS CINZAS...";
+    texto.innerHTML = "> ACESSANDO REDE DE SENSORES DO RIO DAS CINZAS...";
     setTimeout(() => {
         if (tipo === 'quimico') {
-            texto.innerHTML = "<span style='color: #ff4444'>> ERRO: Risco ambiental detectado em Tomazina. Solo degradado.</span>";
+            texto.innerHTML = "<span style='color: #ff4444'>> CRÍTICO: Práticas inadequadas. Risco ambiental em Tomazina.</span>";
         } else {
-            texto.innerHTML = "<span style='color: #00ff88'>> SUCESSO: Protocolo Agrinho validado. Café e Natureza em equilíbrio!</span>";
+            texto.innerHTML = "<span style='color: #00ff88'>> SUCESSO: Protocolo Agrinho validado. Equilíbrio sustentável garantido!</span>";
         }
     }, 1500);
 }
